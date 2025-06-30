@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Local LLM Summarizer",
+  "version": "1.0",
+  "description": "Summarizes webpage text and saves it to Firebase.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8080/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
+}
